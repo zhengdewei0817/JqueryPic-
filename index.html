@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>图片轮转效果</title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="js/PicMove.js" ></script>
+		<link rel="stylesheet" href="css/zdw_picMove.css"  type="text/css"/>
+	</head>
+	<body>
+		<div id="show">
+		<!--<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>-->
+		</div>
+		
+		<script>
+			$(function(){
+				var arr = new Array();
+				var arr2 = new Array();
+				for(var i = 1;i<=6;i++){
+					arr.push("img/"+i+".jpg");
+					arr2.push("http://www.baidu.com")
+				}
+				$("#show").zdw_initPic({
+					picurl:arr,
+					openurl:arr2,
+					isClickPic:false,
+				});
+			})
+		</script>
+		
+	</body>
+</html>

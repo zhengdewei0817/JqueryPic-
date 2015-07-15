@@ -1,0 +1,6 @@
+.test{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	list-style-type: none;
+}
